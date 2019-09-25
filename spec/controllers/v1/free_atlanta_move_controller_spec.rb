@@ -7,7 +7,7 @@ RSpec.describe V1::FreeAtlantaMoveController, type: :controller do
     @request.host = 'localhost'
 
     stub_const('ApplicationController::CONTROLLER_DOMAIN_WHITELIST', TEST_CONTROLLER_DOMAIN_WHITELIST)
-    post :home_form_submission
+    post :home_form_submission, params: { email: 'testing@example.com' }
     expect(response).to be_success
     expect(JSON.parse(response.body)['success']).to eq true
   end
