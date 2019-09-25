@@ -2,7 +2,7 @@ class ApplicationController < ActionController::API
   before_action :validate_request_host!
 
   CONTROLLER_DOMAIN_WHITELIST = {
-    'free_atlanta_move' => 'free-atlanta-move.herokuapp.com'
+    'free_atlanta_move' => 'localhost'
   }
 
   def validate_request_host!
