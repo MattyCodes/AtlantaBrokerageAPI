@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-09-25T09:42:16-05:00">2019-09-25T09:42:16-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-09-25T09:46:37-05:00">2019-09-25T09:46:37-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">97.53%</span></span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.02
+         1.06
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>16</b> files in total.
-    <b>81</b> relevant lines. 
-    <span class="green"><b>79</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed </span>
+    <b>77</b> relevant lines. 
+    <span class="green"><b>77</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -202,12 +202,12 @@
       
       <tr>
         <td class="strong"><a href="#fb7987c676cbe37ee716d1d3b46795b4175f011f" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
-        <td class="yellow strong">85.71 %</td>
-        <td>19</td>
-        <td>14</td>
-        <td>12</td>
-        <td>2</td>
-        <td>0.9</td>
+        <td class="green strong">100.0 %</td>
+        <td>21</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>1.2</td>
       </tr>
       
     </tbody>
@@ -1786,11 +1786,11 @@
         <div class="source_table" id="fb7987c676cbe37ee716d1d3b46795b4175f011f">
   <div class="header">
     <h3>spec/rails_helper.rb</h3>
-    <h4><span class="yellow">85.71 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -1833,79 +1833,91 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
+        <li class="skipped" data-hits="" data-linenumber="7">
           
+          <span class="hits">skipped</span>
+          <code class="ruby"># :nocov:</code>
+        </li>
+      
+        <li class="skipped" data-hits="1" data-linenumber="8">
+          
+          <span class="hits">skipped</span>
           <code class="ruby">begin</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="skipped" data-hits="1" data-linenumber="9">
           
+          <span class="hits">skipped</span>
           <code class="ruby">  ActiveRecord::Migration.maintain_test_schema!</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="skipped" data-hits="" data-linenumber="10">
           
-          
+          <span class="hits">skipped</span>
           <code class="ruby">rescue ActiveRecord::PendingMigrationError =&gt; e</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
+        <li class="skipped" data-hits="0" data-linenumber="11">
           
-          
+          <span class="hits">skipped</span>
           <code class="ruby">  puts e.to_s.strip</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
+        <li class="skipped" data-hits="0" data-linenumber="12">
           
-          
+          <span class="hits">skipped</span>
           <code class="ruby">  exit 1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="skipped" data-hits="" data-linenumber="13">
           
-          
+          <span class="hits">skipped</span>
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="skipped" data-hits="" data-linenumber="14">
+          
+          <span class="hits">skipped</span>
+          <code class="ruby"># :nocov:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">RSpec.configure do |config|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
           <code class="ruby">  config.fixture_path = &quot;#{::Rails.root}/spec/fixtures&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
           <code class="ruby">  config.use_transactional_fixtures = true</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">  config.infer_spec_type_from_file_location!</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">  config.filter_rails_from_backtrace!</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">end</code>
