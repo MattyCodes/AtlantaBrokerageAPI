@@ -6,7 +6,6 @@ class ApplicationController < ActionController::API
   }
 
   def validate_request_host!
-    `echo this is the request host: #{request.host}`
     # invalid_request! unless request.host.present? && CONTROLLER_DOMAIN_WHITELIST[controller_name].include?(request.host)
   end
 

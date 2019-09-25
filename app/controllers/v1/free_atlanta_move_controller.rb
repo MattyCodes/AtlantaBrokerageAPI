@@ -5,7 +5,7 @@ class V1::FreeAtlantaMoveController < ApplicationController
     # TODO: Build of functionality to save form submission data and respond with success JSON.
     success = params[:email].present? && params[:email].match?(VALID_EMAIL_REGEX)
     message = success ? nil : 'Please submit a valid email address'
-
+message += " request host: #{request.host} - controller name: #{controller_name}"
     render json: { success: success, message: message }
   end
 end
