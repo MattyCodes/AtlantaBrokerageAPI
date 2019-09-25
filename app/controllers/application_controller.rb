@@ -2,11 +2,12 @@ class ApplicationController < ActionController::API
   before_action :validate_request_host!
 
   CONTROLLER_DOMAIN_WHITELIST = {
-    'free_atlanta_move' => 'localhost'
+    'free_atlanta_move' => 'free-atlanta-move.herokuapp.com'
   }
 
   def validate_request_host!
-    invalid_request! unless request.host.present? && CONTROLLER_DOMAIN_WHITELIST[controller_name].include?(request.host)
+    `echo this is the request host: #{request.host}`
+    # invalid_request! unless request.host.present? && CONTROLLER_DOMAIN_WHITELIST[controller_name].include?(request.host)
   end
 
   def invalid_request!
